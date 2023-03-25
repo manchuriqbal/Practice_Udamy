@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+}
+
+body {
+    background-color: cadetblue;
+    font-family: math;
+}
+
+.container {
+    overflow: hidden;
+    text-align: center;
+}
+
+.container h1 {
+    color: aliceblue;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: math;
+}
+
+.container h5 {
+    color: #c7cfd7;
+    margin-bottom: 20px;
+}
+
+.btn {
+    border: none;
+    padding: 5px 15px;
+    background: #fb6934;
+    color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(34, 28, 28);
+    color: wheat;
+}
+.output{
+    margin: 20px 0;
+    display: inline-block;
+}
+.download{
+    margin-top: 20px;
+}
