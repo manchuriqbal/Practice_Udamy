@@ -14,7 +14,7 @@
         <h1>Super Geocoder</h1>
         <h5>Please Upload your CSV file. The values containig addresses should be in a column named address or Address</h5>
 
-        <form action="succes_table">
+        <form action="{{url_for('succes_table')}}", method="POST" enctype="multipart/form-data">
             <input type="file" name="file" accept=".csv">
             <button type="submit" class="btn">Submit</button>
         </form>
