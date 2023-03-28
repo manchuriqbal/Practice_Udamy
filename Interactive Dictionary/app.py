@@ -8,6 +8,11 @@ def traslate(word):
     word = word.lower()
     if word in data:
         return data[word]
+    elif word.title() in data:
+        return data[word.title()]
+
+    elif word.upper() in data:
+        return data[word.upper()]
 
     elif len(get_close_matches(word, data.keys())) > 0:
         yn = input("Did you mean %s insteand? Enter Y if yes. Enter N if no.  " %
@@ -28,5 +33,9 @@ word_ = input("Enter a word: ")
 
 output = traslate(word_)
 
-for item in output:
-    print(item)
+
+if type(output) == list:
+    for item in output:
+        print(item)
+else:
+    print(output)
